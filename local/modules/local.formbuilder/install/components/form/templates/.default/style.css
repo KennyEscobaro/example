@@ -1,0 +1,248 @@
+.order-service-btn {
+    cursor: pointer;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: 1px solid var(--footer-background);
+    background-color: var(--footer-background);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    gap: 8px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--background-modal-color);
+    backdrop-filter: blur(6px);
+    z-index: 110;
+}
+
+.modal {
+    width: 660px;
+    height: 100%;
+    background-color: var(--white);
+    box-shadow: 0 20px 25px -5px #0000000d;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 120;
+}
+
+.modal-content {
+    height: 100%;
+    padding: 8px 24px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.scrolling-modal-content {
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.modal-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.close-modal-btn {
+    border: none;
+    outline: none;
+    background: var(--white);
+    cursor: pointer;
+    padding: 11px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+    /*overflow-y: auto;*/
+    flex-grow: 1;
+    overflow: visible;
+}
+
+.modal-form .error-message {
+    color: var(--red);
+}
+
+/* Стили для элементов формы */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+}
+
+.form-label {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.req-symbol {
+    color: var(--red);
+}
+
+.tooltip-block {
+    display: none;
+    position: absolute;
+    background-color: var(--white-smoke);
+    color: var(--footer-background);
+    width: fit-content;
+    top: 105%;
+    white-space: nowrap;
+    padding: 12px;
+    border-radius: 6px;
+    z-index: 5;
+}
+
+.form-group:hover .tooltip-block {
+    display: block;
+}
+
+.info-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #F0F0F0;
+    color: var(--lucky-gray);
+}
+
+.info-block a {
+    color: var(--footer-background);
+    text-decoration: underline;
+}
+
+.info-block b {
+    color: var(--black);
+    font-weight: 400;
+}
+
+.info-block .warning-icon {
+    background: var(--white);
+    border-radius: 50%;
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+}
+
+.buttons-block {
+    margin-top: auto;
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 12px 22px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--footer-background);
+    font-size: 14px;
+    line-height: 18px;
+    font-family: inherit;
+}
+
+.btn-primary {
+    background-color: var(--footer-background);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--footer-background);
+}
+
+/* Модальное окно успеха */
+.modal-success-block {
+    display: block;
+    position: fixed;
+    z-index: 120;
+    box-shadow: 0px 20px 25px -5px #0000000d;
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 8px 24px 24px 24px;
+    max-width: 450px;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-success-block .modal-success-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.modal-success-block .modal-success-top .modal-success-close-btn {
+    padding: 11px;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--white);
+    border: none;
+}
+
+.modal-success-block .modal-success-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.modal-success-block .modal-success-content svg {
+    display: block;
+    min-width: 48px;
+    max-width: 48px;
+    min-height: 48px;
+    max-height: 48px;
+}
+
+.modal-success-block > .modal-success-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    height: 42px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: var(--footer-background);
+    width: fit-content;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 18px;
+}
